@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "fakerino/fakerino": ">=0.6.2",
+        "fakerino/fakerino": ">=0.6.4",
         "symfony/http-kernel": "2.*",
         "symfony/dependency-injection": "2.*",
         "symfony/config": "2.*"

@@ -10,18 +10,31 @@ More information in the [official documentation](https://github.com/niklongstone
 
 ## Installation
 
-  Add the following dependencies to your projects composer.json file:
+  Add the following dependency to your projects composer.json file:
 
 ```JSON
     "require": {
-        "fakerino/symfony-fakerino": "0.0.1",
+        "fakerino/symfony-fakerino": "0.0.2",
     }
+```
+Install the ODS data sample in two ways:
+ - Add a script to your composer.json:  
+```JSON
+  "scripts": {
+        "post-install-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data",
+        "post-update-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data"
+    }
+```
+ In this way the data will be always updated automatically via composer.
+
+ - Run maually the command (after the fakerino composer installation):  
+ ```sh
+$ vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data
 ```
 
 ### Initializing the bundle
 
 To initialize the bundle, you'll need to add it in your `app/AppKernel.php`.
-
 
 ```PHP
 public function registerBundles()
@@ -39,6 +52,18 @@ fakerino:
     config:
         locale: en-GB
         fakerinoTag: fake
+        fakeFilePath: /data
+        fake:
+            fakeMale:
+                - nameMale
+                - surname
+                - country
+        database:
+            dbname: mydb
+            user: username
+            password: password
+            host: localhost
+            driver: pdo_mysql
         fake:
           fakeFemale:
             - titlefemale
