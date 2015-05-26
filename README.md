@@ -14,7 +14,7 @@ More information in the [official documentation](https://github.com/niklongstone
 
 ```JSON
     "require": {
-        "fakerino/symfony-fakerino": "0.0.2",
+        "fakerino/symfony-fakerino": "0.0.*",
     }
 ```
 Install the ODS data sample in two ways:
@@ -41,7 +41,7 @@ public function registerBundles()
 {
     // ...
   $bundles = array(
-            new Fakerino\Bundle\FakerinoBundle(),
+           new Fakerino\Bundle\FakerinoBundle\FakerinoBundle(),
     // ...
 }
 ```
