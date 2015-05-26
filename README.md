@@ -69,12 +69,6 @@ fakerino:
             - titlefemale
             - namefemale
             - surname
-        database:
-            dbname: mydatabase
-            user: myusername
-            password: mypassword
-            host: localhost
-            driver: pdo_mysql
 ```
 
 ### Controller Example
