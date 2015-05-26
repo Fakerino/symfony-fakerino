@@ -35,7 +35,6 @@ class FakerinoBundleExtensionTest extends \PHPUnit_Framework_TestCase
         $this->root = "fakerino";
     }
 
-
     public function testGetConfigWithDefaultValues()
     {
         $this->extension->load(array(), $container = $this->getContainer());

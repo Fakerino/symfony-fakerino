@@ -5,12 +5,21 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+
         <service id="fakerino.factory" class="Fakerino\Fakerino"/>
 
         <service id="fakerino" class="Fakerino\Core\FakeDataFactory">
             <factory service="fakerino.factory" method="create"/>
             <argument>%fakerino.config%</argument>
         </service>
+
+        <service id="app.twig_extension"
+                 class="Fakerino\Bundle\FakerinoBundle\Twig\FakerinoTwigExtension"
+                 public="false">
+            <argument type="service" id="service_container" />
+            <tag name="twig.extension" />
+        </service>
+
     </services>
 
 </container>
