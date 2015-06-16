@@ -15,7 +15,7 @@ More information in the [official documentation](https://github.com/niklongstone
 
 ```JSON
     "require": {
-        "fakerino/symfony-fakerino": "^0.1.0"
+        "fakerino/symfony-fakerino": "~0.1"
     }
 ```
 
@@ -24,14 +24,14 @@ Install the ODS data sample using __one__ of the below options:
 ##### 2.1 Install and update automatically adding a script to your composer.json *(suggested way)*:  
 ```JSON
   "scripts": {
-        "post-install-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino",
-        "post-update-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino"
+        "post-install-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data",
+        "post-update-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data"
     }
 ```
 __NOTE:__ add as first script to be executed.
 #####2.2 Run the command manually *(after the fakerino composer installation)*:  
  ```sh
-$ vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino
+$ vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data
 ```
 
 ### 3. Initializing the bundle

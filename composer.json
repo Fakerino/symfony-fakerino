@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "fakerino/fakerino": "^0.6.4",
+        "fakerino/fakerino": "~0.7",
         "twig/twig": ">=1.13.2",
         "symfony/http-kernel": "2.*",
         "symfony/dependency-injection": "2.*",
