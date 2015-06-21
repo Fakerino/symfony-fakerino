@@ -4,10 +4,10 @@
 [![Travis Ci](https://travis-ci.org/niklongstone/symfony-fakerino.svg?branch=master)](https://travis-ci.org/niklongstone/symfony-fakerino)
 [![License](https://poser.pugx.org/fakerino/symfony-fakerino/license.svg)](https://packagist.org/packages/fakerino/symfony-fakerino)
 
-The FakerinoBundle provides integration of __[Fakerino](https://github.com/niklongstone/Fakerino)__ into the __Symfony2__ framework.  
+The FakerinoBundle provides integration of __[Fakerino](https://github.com/Fakerino/Fakerino)__ into the __Symfony2__ framework.  
 This bundle also include a Fakerino __Twig__ extension.
 
-More information in the [official documentation](https://github.com/niklongstone/Fakerino/wiki).
+More information in the [official documentation](http://www.fakerino.io).
 
 ## Installation
 ###1. Install symfony-fakerino 
